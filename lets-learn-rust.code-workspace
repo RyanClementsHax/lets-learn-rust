@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "projects/guessing_game"
+		},
+		{
+			"path": "projects/hello_cargo"
+		},
+		{
+			"path": "projects/helloworld"
+		}
+	],
+	"settings": {
+		"editor.defaultFormatter": "matklad.rust-analyzer"
+	},
+	"extensions": {
+		"recommendations": [
+			"bungcip.better-toml",
+			"matklad.rust-analyzer"
+		]
+	}
+}

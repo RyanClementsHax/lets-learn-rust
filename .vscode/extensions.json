@@ -1,7 +1,0 @@
-{
-    "recommendations": [
-        "rust-lang.rust",
-        "matklad.rust-analyzer",
-        "bungcip.better-toml"
-    ]
-}
