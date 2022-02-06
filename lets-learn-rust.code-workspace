@@ -11,6 +11,12 @@
 		},
 		{
 			"path": "projects/helloworld"
+		},
+		{
+			"path": "projects/branches"
+		},
+		{
+			"path": "projects/loops"
 		}
 	],
 	"settings": {
