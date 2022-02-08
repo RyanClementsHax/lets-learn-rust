@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "projects/loops"
+		},
+		{
+			"path": "projects/ownership"
 		}
 	],
 	"settings": {
