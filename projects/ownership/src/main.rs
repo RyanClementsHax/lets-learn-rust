@@ -20,6 +20,7 @@ fn main() {
     main7();
     main8();
     main9();
+    main10();
 }
 
 fn main2() {
@@ -159,4 +160,42 @@ fn no_dangle() -> String {
     let s = String::from("hello");
 
     s
+}
+
+fn main10() {
+    let mut str = String::from("this is a test");
+    let index = first_word_index_naive(&str);
+    println!("first word index naive: {}", index);
+    str.clear();
+    println!("first word index naive: {}", index);
+
+    let str = String::from("this is a test");
+    let slice = first_word_index_slice(&str);
+    println!("first word index slice: {}", slice);
+    // error
+    // str.clear();
+    println!("first word index slice: {}", slice);
+}
+
+fn first_word_index_naive(s: &String) -> usize {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return i;
+        }
+    }
+
+    s.len()
+}
+fn first_word_index_slice(s: &String) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+
+    s // &s[..] and &s also work
 }
