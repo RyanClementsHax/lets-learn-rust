@@ -7,4 +7,5 @@ members = [
     "projects/loops",
     "projects/ownership",
     "projects/structs",
+    "projects/modules",
 ]
