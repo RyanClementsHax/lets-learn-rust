@@ -8,4 +8,5 @@ members = [
     "projects/ownership",
     "projects/structs",
     "projects/modules",
+    "projects/collections",
 ]
