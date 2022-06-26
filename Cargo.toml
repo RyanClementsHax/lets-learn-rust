@@ -9,4 +9,5 @@ members = [
     "projects/structs",
     "projects/modules",
     "projects/collections",
+    "projects/concurrency",
 ]
